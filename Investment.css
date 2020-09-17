@@ -7,41 +7,58 @@
     }
     .text1{
         font-size: smaller;
-        /* float: left; */
+        float: left;
         text-align: left;
-        /* width: 40%; */
+        width: 40%;
+        margin-bottom: 0px;
     }
     .text2{
+        margin-top: 0px;
         font-size: smaller;
         float: left;
         text-align: left;
     }
-    .I1{
-        margin-top: 2px;
-        height: auto;
-        width: auto;
-        margin-left: 0px;
-        width: calc(100% -55px);
-        max-width: auto; 
+    .main_text1{
+        font-size: smaller;
+        float: left;
+        text-align: left;
+        width: 40%;
+        margin-bottom: 0px;
     }
-    .T1{
-        width: auto;
-        float: right;
-        width: 50%;
+    .main_text2{
+        font-size: smaller;
+        float: left;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    .I1{
+        margin-top: -50px;
+        width: 40%;
     }
     .I3{
         width: 51%;
         
     }
+    .T1{
+        float: right;
+        width: 50%;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        margin-right: 50px;
+    }
+    .T2{
+        float: right;
+        width: 50%;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        margin-right: 50px;
+    }
+    
 }
 .text3{
     margin-top: 15%;
 }
-/* .text1{
-    font-size: smaller;
-    float: left;
-    text-align: center;
-} */
+
 .title{
     text-align: center;
     margin-top: auto;
