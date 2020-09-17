@@ -5,12 +5,19 @@
     .main_content2{
         border: 1px black solid;
     }
+    .section1{
+        text-align: center;
+    }
+    .section2{
+        text-align: center;
+    }
     .text1{
-        font-size: smaller;
-        float: left;
+        font-size: 12px;
         text-align: left;
         width: 40%;
         margin-bottom: 0px;
+        display: inline-block;
+        vertical-align: middle;
     }
     .text2{
         margin-top: 0px;
@@ -19,8 +26,9 @@
         text-align: left;
     }
     .main_text1{
-        font-size: smaller;
-        float: left;
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: middle;
         text-align: left;
         width: 40%;
         margin-bottom: 0px;
@@ -32,7 +40,8 @@
         margin-bottom: 0px;
     }
     .I1{
-        margin-top: -50px;
+        display: inline-block;
+        vertical-align: middle;
         width: 40%;
     }
     .I3{
@@ -40,11 +49,9 @@
         margin: 0 auto;
     }
     .T1{
-        float: right;
+        display: inline-block;
+        vertical-align: middle;
         width: 50%;
-        margin-top: 80px;
-        margin-bottom: 0px;
-        margin-right: 50px;
     }
     .T2{
         float: right;
@@ -52,6 +59,12 @@
         margin-top: 40px;
         margin-bottom: 0px;
         margin-right: 50px;
+    }
+    .T3{
+        display:inline-block;
+        margin: 0 auto;
+        vertical-align: middle;
+        width: 53%;
     }
     
 }
@@ -77,10 +90,24 @@
     background-color: lightgray;
 }
 .I3{
-    display: block;
+    display:block;
     margin: 0 auto;
 }
-
+.I4{
+    display:inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.I5{
+    display:inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+.T3{
+    display:inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
 table{
     display: inline-block;
     border-collapse: separate;
@@ -108,6 +135,12 @@ th {
 #content2{
     background-color: white;
 }
+.section2-1{
+    text-align: center;
+}
+.section2-3{
+    text-align: center;
+}
 .main_content2{
     text-align: left;
     margin-right: 10%;
@@ -115,10 +148,15 @@ th {
 }
 footer{
     background-color: darkslategray;
+    text-align: center;
 }
-#footer_main_content{
-    text-align: left;
-    margin-right: 10%;
-    margin-left: 10%;
-    border: 1px black solid;
+.footer_ul1{
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+}
+.footer_ul2{
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
 }
