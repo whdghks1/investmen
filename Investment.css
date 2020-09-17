@@ -8,9 +8,6 @@
     .section1{
         text-align: center;
     }
-    .section2{
-        text-align: center;
-    }
     .text1{
         font-size: 12px;
         text-align: left;
@@ -26,10 +23,8 @@
         text-align: left;
     }
     .main_text1{
-        font-size: 12px;
+        font-size: smaller;
         display: inline-block;
-        vertical-align: middle;
-        text-align: left;
         width: 40%;
         margin-bottom: 0px;
     }
@@ -49,9 +44,11 @@
         margin: 0 auto;
     }
     .T1{
-        display: inline-block;
-        vertical-align: middle;
+        float: right;
         width: 50%;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        margin-right: 50px;
     }
     .T2{
         float: right;
