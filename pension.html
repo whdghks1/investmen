@@ -2,21 +2,121 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="pension.css">
+        <link rel="stylesheet" href="css/pension.css">
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $(".bhide").hide();
+            $(".bbox").hide();
+            $(".v1").show();
+            $(".v2").hide();
+            $(".menu > a").mouseenter(function(){
+                $(".bhide").show();
+                $(".bbox").show();
+                $(".v2").show();
+                $(".v1").hide();
+            });
+            $(".menu").mouseleave(function(){
+                $(".bhide").hide();
+                $(".bbox").hide();
+                $(".v1").show();
+                $(".v2").hide(); 
+            });
+        });
+         $(document).ready(function(){
+          $(".menu1-2>a").click(function(){
+           $(this).next("div").toggleClass("hide");
+           });
+          });
+        $(document).ready(function(){
+         $("#mheader_img>a").click(function(){
+           $(this).next("div").toggleClass("mmenu");
+         });
+        });
+        $(document).ready(function(){
+         $(".myMenu>a").click(function(){
+           $("mmeun").hide();
+         });
+        });
+        $(document).ready(function(){
+            $("#m1").show();
+            $("#m2").hide();
+            $(".mback").hide();
+            $("#mheader_img").css("background-color","");
+            $("#m1").click(function(){
+                $("#m1").hide();
+                $("#m2").show();
+                $(".mback").show();
+                $("#mheader_img").css("background-color","rgb(36, 49, 58)");
+            });
+            $("#m2").click(function(){
+                $("#m1").show();
+                $("#m2").hide();
+                $(".mback").hide();
+                $("#mheader_img").css("background-color","");
+            });
+        });
+          </script>
     </head>
     <body>
         <header>
             <div id="header_container">
                 <div class="main_header">
                     <img class="header_icon" src="https://fount.co/images/Header/fount-logo-green.svg">
-                    <div class="header_menu">
-                        <div class="menu">Company</div>
-                        <div class="menu">Investment</div>
-                        <img src="https://fount.co/images/Menu/down-black.svg">
-                        <div class="menu">Coach</div>
-                        <div class="menu">FAQ</div>
+                    <div id="mheader_img">
+                    <a>
+                        <img id="m1" src="https://fount.co/images/Menu/mobile-menu-black.svg">
+                        <img id="m2" src="https://fount.co/images/Menu/mobile-x-nav-white.svg" style="background-color: rgb(36 , 49, 58);">
+                    </a>
+                        <div class="mmenu">
+                            <nav class="me">
+                                <ul id="myMenu">
+                                    <li class="menu1">Company</li>
+                                    <li class="menu1-2">
+                                        <a>Investment<img class="menu1_v" src="https://fount.co/images/Menu/down-white.svg" style="margin: auto 7px;"></a> 
+                                        <div class="hide">
+                                            <ul id="submenu">
+                                                <li><a href="Investment.html">투자전략</a></li>
+                                                <li><a href="fund.html">로보 펀드</a></li>
+                                                <li><a href="etf.html">로보 ETF</a></li>
+                                                <li><a href="pension.html">로보 연금</a></li>
+                                                <li><a href="cma.html">CMA</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu1" style="padding-top: 20px;">Coach</li>
+                                    <li class="menu1">FAQ</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="mback"></div>
+                    <div class="menu">
+                        <nav class="e">
+                            <ul id="list">
+                                <li class="menu">Company</li>
+                                <li class="menu">
+                                    <a>Investment
+                                        <img class="v2" src="https://fount.co/images/Menu/up-black.svg" style="margin: auto 7px;">
+                                        <img class="v1" src="https://fount.co/images/Menu/down-black.svg" style="margin: auto 7px;">
+                                    </a> 
+                                    <div class="bhide">
+                                        <ul id="bsubmenu">
+                                            <li><a href="Investment.html">투자전략</a></li>
+                                            <li><a href="fund.html">로보 펀드</a></li>
+                                            <li><a href="etf.html">로보 ETF</a></li>
+                                            <li><a href="pension.html">로보 연금</a></li>
+                                            <li><a href="cma.html">CMA</a></li>
+                                        </ul>
+                                    </div>
+                                </li>  
+                                <li class="menu">Coach</li>
+                                <li class="menu">FAQ</li>
+                            </ul>
+                        </nav>  
                     </div>
                 </div>
+                <div class="bbox"></div>
             </div>
         </header>
         <p class="title">파운트 로보 연금</p>

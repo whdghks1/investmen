@@ -375,6 +375,7 @@
     .mmenu{
         display: none;
     }
+    .e{display: none;}
     .menu1-2 .hide{display: none;}
     #submenu{
         border-top: 6px solid rgb(51, 168, 128);

@@ -1,4 +1,4 @@
-@media (min-width:800px){
+@media (min-width:900px){
     #content1{
         text-align: center;
         background-color:rgb(250, 250, 250);
@@ -140,21 +140,21 @@
     }
     header{
         position: fixed;
-        top: 0;
+         top: 0;
         left: 0;
         right: 0;
-        width: 100%;
-        height: 89px;
-        display: flex;
-        justify-content: center;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0px;
     }
     .main_header{
-        height: 100%;
-        width: 1200px;
+        width: 100%;
+        height: 89px;
+        display: flex;
+        justify-content: center;
         display: flex;
         justify-content: space-between;
+        margin: 0 auto;
+        box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0px;
     }
     .header_icon{
         width: 100px;
@@ -171,12 +171,62 @@
     }
     .menu{
         height: 100%;
-        padding: 10px 25px;
+        padding: 0px 25px;
         font-size: 18px;
-        line-height: 1.11;
+        line-height: 3;
         text-align: left;
-        display: flex;
+        display: block;
         align-items: center;
+        text-decoration: none;
+    }
+    .e{
+        display: flex;
+    }
+    #list{
+        display: flex;
+    }
+    #bsubmenu{
+        margin-top: 30px;
+        list-style: none;
+        padding-left: 15px;
+    }
+    .header_box{
+        margin-top:220px;
+        display: inline;
+        top: 89px;
+        width: 100%;
+        height: 110px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px 0px;
+    }
+    .header_img{
+        margin-left: 5px;
+    }
+    .header_menu div:hover{
+        border-bottom: 4px solid rgb(51, 168, 128);
+    }
+    .header_img{
+        display: none;
+    }
+    .bbox{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px 0px;
+        height: 300px;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        top: 100px;
+    }
+    #mheader_img{display: none;}
+    .mmenu{display: none;}
+    #menu_li{
+        margin: 0 auto;
+        padding-right: 290px;
+        line-height: 60px;
+        top: 89px;
+        text-align: right;
+    }
+    .li_box{
+        padding-left: 40%;
+    }
     }footer{
         color: white;
         background-color: rgb(36, 49, 58);
@@ -250,14 +300,139 @@
         margin-top: 70px;
         padding-top: 89px;
     }
-}
+
 body{
     text-align: center;
 }
 .highlight{
     color: rgb(51, 168, 128);
 }
-@media (max-width:800px){
+@media (max-width:900px){
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 57px;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0px;
+    }
+    #header_container{
+        width: 100%;
+        display: inline-block;
+        margin: auto 0px;
+    }
+    #mheader_img{
+        width: 16.4px;
+        display: inline-block;
+        cursor: pointer;
+        float: right;
+        padding: 20px 20px 40px 143px;
+    }
+    #m2{
+        background-color: rgb(36, 49, 58);
+    }
+    .mmenu{
+        display: none;
+    }
+    .e{display: none;}
+    .menu1-2 .hide{display: none;}
+    #submenu{
+        border-top: 6px solid rgb(51, 168, 128);
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 2.5;
+        padding-left: 14px;
+        padding-top: 10px;
+        list-style: none;
+        width: 100px; 
+        margin: 10px 0px;
+    }
+    .me{
+        height: 100%;
+        display: inline;
+        align-items: center;
+        position: fixed;
+        right: 0px;
+        padding-top: 10px;
+    }
+    .mback{
+        background-color: black;
+        opacity: 0.5;
+        height: 1000000px;
+        top: 0px;
+        margin:-50px 179px 0px 0px;
+    }
+    #myMenu{
+        height: 100%;
+        width: 139px;
+        float: right;
+        color: white;
+        background-color: rgb(36, 49, 58);
+    }
+    .menu1-v{
+        display: block;
+        margin-left: 6px;
+    }
+    #menu0{
+        display: block;
+        margin: 30px 30px;
+        float: right;
+    }
+    .menu1{
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 1.1;
+        display:block;
+        width:80px;
+        float: left;
+        padding-bottom: 20px;
+        text-align:left; 
+        position:relative; 
+        }
+    .menu1-2{
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 1.1;
+        display:contents;
+        width:80px;
+        float: left;
+        padding-bottom: 20px;
+        text-align:left; 
+        position:relative;  
+        }
+    #menu_li{
+        display: none;
+    }
+    .header_icon{
+        width: 80px;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 0px;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .header_menu{
+        display: none;
+        height: 100%;
+        margin-right: 65px;
+        align-items: center;
+    }
+    .menu{
+        height: 100%;
+        padding: 10px 25px;
+        font-size: 18px;
+        line-height: 1.11;
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
     .main_content1{
         text-align: center;
         width: calc(100% - 60px);
@@ -421,27 +596,112 @@ body{
         left: 0;
         right: 0;
         width: 100%;
-        height: 89px;
+        height: 57px;
         display: flex;
         justify-content: center;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0px;
     }
-    .main_header{
+    #header_container{
+        width: 100%;
+        display: inline-block;
+        margin: auto 0px;
+    }
+    #mheader_img{
+        width: 16.4px;
+        display: inline-block;
+        cursor: pointer;
+        float: right;
+        padding: 20px 20px 40px 143px;
+    }
+    #m2{
+        background-color: rgb(36, 49, 58);
+    }
+    .mmenu{
+        display: none;
+    }
+    .e{display: none;}
+    .menu1-2 .hide{display: none;}
+    #submenu{
+        border-top: 6px solid rgb(51, 168, 128);
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 2.5;
+        padding-left: 14px;
+        padding-top: 10px;
+        list-style: none;
+        width: 100px; 
+        margin: 10px 0px;
+    }
+    .me{
         height: 100%;
-        width: calc(100% - 60px);
-        display: flex;
-        justify-content: space-between;
+        display: inline;
+        align-items: center;
+        position: fixed;
+        right: 0px;
+        padding-top: 10px;
+    }
+    .mback{
+        background-color: black;
+        opacity: 0.5;
+        height: 1000000px;
+        top: 0px;
+        margin:-50px 179px 0px 0px;
+    }
+    #myMenu{
+        height: 100%;
+        width: 139px;
+        float: right;
+        color: white;
+        background-color: rgb(36, 49, 58);
+    }
+    .menu1-v{
+        display: block;
+        margin-left: 6px;
+    }
+    #menu0{
+        display: block;
+        margin: 30px 30px;
+        float: right;
+    }
+    .menu1{
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 1.1;
+        display:block;
+        width:80px;
+        float: left;
+        padding-bottom: 20px;
+        text-align:left; 
+        position:relative; 
+        }
+    .menu1-2{
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 1.1;
+        display:contents;
+        width:80px;
+        float: left;
+        padding-bottom: 20px;
+        text-align:left; 
+        position:relative;  
+        }
+    #menu_li{
+        display: none;
     }
     .header_icon{
-        width: 100px;
-        height: 100%;
-        margin-left: 80px;
-        padding: 0px 10px;
-        display: block;
+        width: 80px;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding: 0px;
+        cursor: pointer;
+        display: inline-block;
     }
     .header_menu{
-        display: flex;
+        display: none;
         height: 100%;
         margin-right: 65px;
         align-items: center;
@@ -453,8 +713,10 @@ body{
         line-height: 1.11;
         text-align: left;
         display: flex;
-        align-items: center;}
+        align-items: center;
+    }
     footer{
+        height: 100%;
         color: white;
         background-color: rgb(36, 49, 58);
         text-align: center;
