@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="fund.css">
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $(".bhide").hide();
+            $(".bbox").hide();
+            $(".v1").show();
+            $(".v2").hide();
+            $(".menu > a").mouseenter(function(){
+                $(".bhide").show();
+                $(".bbox").show();
+                $(".v2").show();
+                $(".v1").hide();
+            });
+            $(".menu").mouseleave(function(){
+                $(".bhide").hide();
+                $(".bbox").hide();
+                $(".v1").show();
+                $(".v2").hide(); 
+            });
+        });
+         $(document).ready(function(){
+          $(".menu1-2>a").click(function(){
+           $(this).next("div").toggleClass("hide");
+           });
+          });
+        $(document).ready(function(){
+         $("#mheader_img>a").click(function(){
+           $(this).next("div").toggleClass("mmenu");
+         });
+        });
+        $(document).ready(function(){
+         $(".myMenu>a").click(function(){
+           $("mmeun").hide();
+         });
+        });
+        $(document).ready(function(){
+            $("#m1").show();
+            $("#m2").hide();
+            $(".mback").hide();
+            $("#mheader_img").css("background-color","");
+            $("#m1").click(function(){
+                $("#m1").hide();
+                $("#m2").show();
+                $(".mback").show();
+                $("#mheader_img").css("background-color","rgb(36, 49, 58)");
+            });
+            $("#m2").click(function(){
+                $("#m1").show();
+                $("#m2").hide();
+                $(".mback").hide();
+                $("#mheader_img").css("background-color","");
+            });
+        });
+          </script>
+    </head>
+    <body>
+        <header>
+            <div id="header_container">
+                <div class="main_header">
+                    <img class="header_icon" src="https://fount.co/images/Header/fount-logo-green.svg">
+                    <div id="mheader_img">
+                    <a>
+                        <img id="m1" src="https://fount.co/images/Menu/mobile-menu-black.svg">
+                        <img id="m2" src="https://fount.co/images/Menu/mobile-x-nav-white.svg" style="background-color: rgb(36 , 49, 58);">
+                    </a>
+                        <div class="mmenu">
+                            <nav class="me">
+                                <ul id="myMenu">
+                                    <li class="menu1">Company</li>
+                                    <li class="menu1-2">
+                                        <a>Investment<img class="menu1_v" src="https://fount.co/images/Menu/down-white.svg" style="margin: auto 7px;"></a> 
+                                        <div class="hide">
+                                            <ul id="submenu">
+                                                <li>투자전략</li>
+                                                <li>로보 펀드</li>
+                                                <li>로보 ETF</li>
+                                                <li>로보 연금</li>
+                                                <li>CMA</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu1" style="padding-top: 20px;">Coach</li>
+                                    <li class="menu1">FAQ</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="mback"></div>
+                    <div class="menu">
+                        <nav class="e">
+                            <ul id="list">
+                                <li class="menu">Company</li>
+                                <li class="menu">
+                                    <a>Investment
+                                        <img class="v2" src="https://fount.co/images/Menu/up-black.svg" style="margin: auto 7px;">
+                                        <img class="v1" src="https://fount.co/images/Menu/down-black.svg" style="margin: auto 7px;">
+                                    </a> 
+                                    <div class="bhide">
+                                        <ul id="bsubmenu">
+                                            <li>투자전략</li>
+                                            <li>로보 펀드</li>
+                                            <li>로보 ETF</li>
+                                            <li>로보 연금</li>
+                                            <li>CMA</li>
+                                        </ul>
+                                    </div>
+                                </li>  
+                                <li class="menu">Coach</li>
+                                <li class="menu">FAQ</li>
+                            </ul>
+                        </nav>  
+                    </div>
+                </div>
+                <div class="bbox"></div>
+            </div>
+        </header>
+        <p class="title">파운트 로보 펀드</p>
+        <div class="col">
+            <div id="content1">
+            <div class="main_content1">
+                <div class="mc1">
+                <p class="main_text1"><span class="small_title">관리하고 또 관리하는 밀착관리 투자</span><br><br>시장 변화에 따라 개별 펀드의 펀드 매니저가 관리하는 동시에, 파운트의 알고리즘이 자산구성에 대해 한 번 더 관리함으로써 보다 민감하게 변화에 대응합니다.</p>
+                </div>
+                <img class="I1" src="https://fount.co/images/Screen/Investment/Fund/Section1/fund-mobile-graphillust.svg">
+                <div class="mc2">
+                <p class="small_title">가입정보</p>
+                <table class="T1">
+                    <tr><th>최소 가입금액</th><td>10만원</td></tr>
+                    <tr><th>납입방법</th><td>수시 자유납입</td></tr>
+                    <tr><th>리밸런싱 주기</th><td>3개월</td></tr>
+                    <tr><th>자문보수</th><td>연 수익의 15%(수익 없으면 0원)</td></tr>
+                </table>
+                <p class="small_title">이런 분들께 추천합니다</p>
+                <ul class="l1">
+                    <li>다양한 해외자산에 투자하고 싶으신 분</li>
+                    <li>매매 타이밍에 의한 투자가 어려우신 분</li>
+                    <li>소액으로 자산배분 투자를 시작하기 원하는 분</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="content2">
+            <div class="main_content2">
+                <p class="small_title">투자 유형별 수익률 정보</p>
+                <img class="I2" src="https://fount.co/images/Screen/Investment/Fund/Section2/fund-mobile-graph.svg">
+                <table class="T2">
+                    <tr><th></th><th>공격형</th><th>중립형</th><th>안정형</th><th>KOSPI</th></tr>
+                    <tr><td class="td1">누적 수익률</td><td>8.1%</td><td>9.4%</td><td>8.8%</td><td>-9.9%</td></tr>
+                    <tr><td class="td1">최근 1년 수익률</td><td>25.1%</td><td>15.6%</td><td>6.9%</td><td>9.3%</td></tr>
+                </table>
+                <p class="teg">*2018년 06월 01일 ~2019년 12월 31일<br> 데이터는 6개월마다 업데이트됩니다.</p>
+            </div>
+        </div>
+        <div id="content3">
+            <div class="main_content3">
+                <p class="small_title">다른 분들은 이렇게 투자하고 있어요</p>
+                <table class="T3">
+                    <tr><th>펀드 선택 비율</th><th>평균 첫 납입액</th><th>평균 목표 기간</th></tr>
+                    <tr><td class="bor">69.4%</td><td class="bor">105만원</td><td>27개월</td></tr>
+                </table>
+                <table class="T3">
+                    <tr><th>추가 납입 비율</th><th>계좌당 평균 납입액</th><th>연 평균 납입욋수</th></tr>
+                    <tr><td class="bor">76.7%</td><td class="bor">535만원</td><td>4.1회</td></tr>
+                </table>
+                <p class="text2">재무 목표 수익</p>
+                <img class="I3" src="https://fount.co/images/Screen/Investment/Fund/Section3/fund-mobile-rank1.svg">
+                <img class="I3" src="https://fount.co/images/Screen/Investment/Fund/Section3/fund-mobile-rank2.svg">
+                <img class="I3" src="https://fount.co/images/Screen/Investment/Fund/Section3/fund-mobile-rank3.svg">
+            </div>
+        </div>
+        <p class="know">상품에 대해 더 알고 싶으시다면?</p>
+        <p class="call">고객센터 문의하기</p>
+        <footer>
+            <div class="footer_container">
+                <img class="footer_img" src="https://fount.co/images/Header/fount-logo-white.svg">
+                <ul class="footer_ul1">
+                    <li>주식회사 파운트|대표김영빈</li>
+                    <li>사업자등록번호 216-88-00205</li>
+                    <li>&nbsp;</li>
+                    <li>TEL. 1833-4656 | FAX. 02-6280-8454</li>
+                    <li>E-MAIL. contact@fount.co</li>
+                    <li>서울특별시 서대문구 충정로 50, 6층</li>
+                    <li>&nbsp;</li>
+                    <li><img src="https://fount.co/images/Footer/naver-blog-icon.svg"><img src="https://fount.co/images/Footer/youtube_icon.svg"></li>
+                    <li class="footer_text">© Fount Investment Co., Ltd. All rights reserved</li>
+                </ul>
+                <ul class="footer_ul2">
+                    <li>
+                        <ul class="footer_ul3">
+                            <li>이용약관</li>
+                            <li>&nbsp;|&nbsp;</li>
+                            <li>개인정보처리방침</li>
+                            <li>&nbsp;|&nbsp;</li>
+                            <li>공지사항</li>
+                        </ul>
+                    </li>
+                    <li class="footer_box"><span class="footer_box_text">제도권 금융회사 조회</span></li>
+                    <li class="footer_text">주식회사 파운트투자자문은 ‘자본 시장과 금융투자에 관한 법률 제12조’에 따라 일정한 자격요건(자본금, 운용전문인력 등 인적,물적 요건)을 갖추고 금융감독위원회에 등록된 투자 자문회사입니다. 당사는 금융투자상품의 가치 또는 그에 대한 투자판단(종류, 종목, 취득, 처분, 취득 처분의 방법, 수량, 가격 시기 등에 대한 판단)에 관한 자문을 제공할 수 있는 자격을 가지며, 제도권 금융기관으로서 금융감독원의 감독과 검사를 받고 있습니다.</li>   
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
