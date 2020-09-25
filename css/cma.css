@@ -605,6 +605,7 @@
         font-weight: bold;
     }
     footer{
+        height: 100%;
         color: white;
         background-color: rgb(36, 49, 58);
         text-align: center;
@@ -615,10 +616,15 @@
     .footer_container{
         max-width: 300px;
         padding-top: 40px;
+        text-align: center;
+        padding-top: 40px;
+        display: inline;
         margin: 0 auto;
+        text-align: center;
         margin-bottom: 10px;
     }
     .footer_ul1{
+        float: left;
         margin-top: 0px;
         line-height: 1.5;
         display: inline-block;
@@ -626,8 +632,6 @@
         list-style: none;
         padding-left: 0px;
         text-align: left;
-        float: left;
-        font-size: 12px;
     }
     .footer_ul2{
         margin-left: auto;
@@ -649,7 +653,7 @@
     }
     .footer_img{
         float: left;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
     .footer_box{
         height: 38px;
