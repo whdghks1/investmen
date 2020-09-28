@@ -230,6 +230,29 @@
         align-items: center;
         text-decoration: none;
     }
+    .menu1{
+        height: 100%;
+        padding: 0px 25px;
+        font-size: 18px;
+        line-height: 3;
+        text-align: left;
+        display: block;
+        align-items: center;
+        text-decoration: none;
+    }
+    .menu2{
+        height: 100%;
+        padding: 0px 25px;
+        font-size: 18px;
+        line-height: 3;
+        text-align: left;
+        display: block;
+        align-items: center;
+        text-decoration: none;
+    }
+    .sbox{
+        padding-bottom: 16px;
+    }
     .e{
         display: flex;
     }
@@ -252,7 +275,10 @@
     .header_img{
         margin-left: 5px;
     }
-    .header_menu div:hover{
+    .e .menu:hover{
+        border-bottom: 4px solid rgb(51, 168, 128);
+    }
+    .e .sbox:hover{
         border-bottom: 4px solid rgb(51, 168, 128);
     }
     .header_img{
@@ -265,7 +291,11 @@
         width: 100%;
         display: flex;
         top: 100px;
+        margin-top: 40px
     }
+    a{text-decoration: none;}
+    a:visited { color: black; text-decoration: none;}
+    a:hover { color: black; text-decoration: none;}
     #mheader_img{display: none;}
     .mmenu{display: none;}
     #menu_li{
@@ -461,6 +491,8 @@
         margin-right: 65px;
         align-items: center;
     }
+    a:visited { color: white; text-decoration: none;}
+    a:hover { color: white; text-decoration: none;}
     .menu{
         height: 100%;
         padding: 10px 25px;
@@ -713,3 +745,4 @@
 #content3{
     background-color: rgb(250, 250, 250);
 }
+
