@@ -139,6 +139,7 @@
         color: rgb(148, 169, 160);
     }
     header{
+        margin: auto;
         position: fixed;
          top: 0;
         left: 0;
@@ -147,14 +148,13 @@
         box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0px;
     }
     .main_header{
-        width: 100%;
+        width: 1440px;
         height: 89px;
         display: flex;
         justify-content: center;
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        box-shadow: rgba(0, 0, 0, 0.1)0px 1px 3px 0px;
     }
     .header_icon{
         width: 100px;
