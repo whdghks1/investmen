@@ -644,6 +644,7 @@ body{
     .mmenu{
         display: none;
     }
+    a{text-decoration: none;}
     .e{display: none;}
     .menu1-2 .hide{display: none;}
     #submenu{
